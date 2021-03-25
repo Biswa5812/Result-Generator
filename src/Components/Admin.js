@@ -1,27 +1,19 @@
-import React, { useState } from "react";
-import {
-    Form,
-    Container,
-    FormGroup,
-    Input,
-    Label,
-    Button
-} from "reactstrap";
-import Admin_access from "./Admin_access";
+import React from "react";
+import AdminAccess from "./AdminAccess";
 
 const Admin = () =>
 {
 
-    const [isAdmin, setIsAdmin] = useState(false);
+    // const [isAdmin, setIsAdmin] = useState(false);
 
     return(
         <div>
             {/* <h1 className="main_text">Admin Login</h1> */}
             {
-                (isAdmin) ? (
+                (false) ? (
                     <h1>Component to be inserted</h1>
                 ):(
-                    <Admin_access/>
+                    <AdminAccess/>
                     // <Container fluid className="details">
                     //     <Form>
                     //         <FormGroup>

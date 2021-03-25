@@ -1,14 +1,14 @@
 import React from "react";
-import {Container} from "reactstrap";
+// import {Container} from "reactstrap";
 import "bootstrap/dist/css/bootstrap.min.css"
 import './App.css';
 import Homes from "./Components/home";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import {
-  BrowserRouter as Router,
+  // BrowserRouter as Router,
   Switch,
-  Link,
+  // Link,
   Route
 } from "react-router-dom";
 import Admin from "./Components/Admin";

@@ -1,13 +1,12 @@
 // import { Button } from "bootstrap";
 import React,{useState} from "react";
-import firebase,{storage} from "../firebase";
+import {storage} from "../firebase";
 import logo from "../kv_pic.png";
 import {
     Container,
     Form,
     FormGroup,
     Input,
-    InputGroup,
     Label,
     Button
 } from "reactstrap";
@@ -39,7 +38,7 @@ const Homes = () =>
 
     return(
         <div className="home    ">
-            <img className="image" src={logo} height="100"></img>
+            <img className="image" src={logo} height="100" alt="Unable to load"></img>
             <h1 className="temp">Student Result Portal</h1>
         <Container fluid className="details">
             <Form >

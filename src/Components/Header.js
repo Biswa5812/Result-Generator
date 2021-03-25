@@ -1,17 +1,9 @@
 import React from "react";
 import {
     Nav,
-    NavItem,
     NavbarBrand,
     Navbar
 } from "reactstrap";
-import {
-    BrowserRouter as Router,
-    Switch,
-    Link,
-    Route
-  } from "react-router-dom";
-import Admin from "./Admin";
 
 const Header = () =>
 {

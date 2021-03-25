@@ -1,19 +1,16 @@
 import React,{useState} from "react";
-import firebase,{storage} from "../firebase";
+import firebase from "../firebase";
 import {
     Form,
     FormGroup,
     Input,
-    Label,
     Button,
     Container,
-    Progress
 } from "reactstrap";
-import { render } from "@testing-library/react";
+// import { render } from "@testing-library/react";
 
 const Admin_access = () =>
 {
-    var f;
     const [file,setFile] = useState([]);
     const onUpload = (e) =>
     {
@@ -30,7 +27,6 @@ const Admin_access = () =>
         //     console.log('Uploaded a blob or file!');
         // });
         // console.log("hello");
-        f = 0;
         for (var i = 0; i < file.length; i++) 
         {
             // console.log("enter");
@@ -54,7 +50,7 @@ const Admin_access = () =>
             //Update progress bar
             task.on('state_changed',
                 function progress(snapshot){
-                var percentage = snapshot.bytesTransferred / snapshot.totalBytes * 100;
+                // var percentage = snapshot.bytesTransferred / snapshot.totalBytes * 100;
                     // uploader.value = percentage;
                     // console.log(percentage);
                 },
